@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tasty.recipesapp.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.tasty.recipesapp.ui.recipe.RecipesFragment"
+        android:label="Recipes"
+        tools:layout="@layout/fragment_recipes" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.tasty.recipesapp.ui.profile.ProfileFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_profile" />
+
+    <action
+        android:id="@+id/action_homeFragment_to_recipesFragment"
+        app:destination="@id/recipesFragment" />
+
+    <action
+        android:id="@+id/action_homeFragment_to_profileFragment"
+        app:destination="@id/profileFragment" />
+
+    <action
+        android:id="@+id/action_recipesFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+
+    <action
+        android:id="@+id/action_recipesFragment_to_ProfileFragment"
+        app:destination="@id/profileFragment" />
+
+    <action
+        android:id="@+id/action_profileFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+
+    <action
+        android:id="@+id/action_profileFragment_to_recipesFragment"
+        app:destination="@id/recipesFragment" />
+
+</navigation>
