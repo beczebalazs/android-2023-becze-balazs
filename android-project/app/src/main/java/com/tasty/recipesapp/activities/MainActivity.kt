@@ -1,9 +1,10 @@
-package com.tasty.recipesapp
+package com.tasty.recipesapp.activities
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
+import com.tasty.recipesapp.R
 import com.tasty.recipesapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
